@@ -2,10 +2,10 @@ version: '2'
 
 services:
   apache:
-    build: 
-    context: .
-    dockerfile: dockerfile
-    ports:
+     build: 
+     context: .
+     dockerfile: dockerfile
+     ports:
       - '80:80'
       - '443:443'
-    container_name: apache
+     container_name: apache
