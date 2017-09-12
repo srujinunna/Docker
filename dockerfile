@@ -4,7 +4,7 @@ RUN apt-get update \
     && apt-get install apache2 -y
 
 
-COPY index.html  /var/www/html/index.html
+COPY index.html /usr/local/apache2/htdocs/
 
 CMD ["apachectl","-D","FOREGROUND" ]
 
